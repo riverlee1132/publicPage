@@ -1,0 +1,223 @@
+/* 퍼블리싱에 사용할 CSS */
+/*================== 아이콘 폰트 필수 요소 */
+@font-face {
+  font-family: "Material Symbols Rounded";
+  font-style: normal;
+  src: url("./assets/Material_Symbols_Rounded/icon_font.ttf");
+}
+
+.icon-test {
+  font-family: "Material Symbols Rounded";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  color: inherit;
+  font-variation-settings: "FILL" 1, "wght" 600, "GRAD" 0;
+}
+
+/*================== 아이콘 기본 스타일과 크기 */
+.icon-test {
+  color: inherit;
+  font-variation-settings: "FILL" 1, "wght" 600, "GRAD" 0, "opsz" 24;
+}
+.icon-test.md-10 {
+  font-size: 10px;
+}
+.icon-test.md-12 {
+  font-size: 12px;
+}
+.icon-test.md-14 {
+  font-size: 14px;
+}
+.icon-test.md-16 {
+  font-size: 16px;
+}
+.icon-test.md-18 {
+  font-size: 18px;
+}
+.icon-test.md-20 {
+  font-size: 20px;
+}
+.icon-test.md-22 {
+  font-size: 22px;
+}
+.icon-test.md-24 {
+  font-size: 24px;
+}
+.icon-test.md-32 {
+  font-size: 32px;
+}
+.icon-test.md-48 {
+  font-size: 48px;
+}
+.icon-test.md-64 {
+  font-size: 64px;
+}
+
+/* ==================버튼 공통 */
+
+button[class*="btn_"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  border-radius: 7px;
+}
+
+/* ==================아이콘 영역 지정 */
+.btn_bool {
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* ==================기본 버튼 크기별 구분 */
+.btn_small {
+  min-width: 51px;
+  padding: 4px 8px;
+}
+
+.btn_small .title {
+  font-size: var(--sys-font-body-s);
+}
+
+.btn_medium {
+  min-width: 78px;
+  padding: 12px 16px;
+}
+
+.btn_medium .title {
+  font-size: var(--sys-font-body-m);
+}
+
+.btn_large {
+  min-width: 100px;
+  padding: 16px 24px;
+  font-size: var(--sys-font-body-lg);
+}
+
+.btn_large .title {
+  font-size: var(--sys-font-body-lg);
+}
+
+/* ==================아이콘 버튼 크기별 구분 */
+
+.btn_small_icon {
+  width: 30px;
+  height: 30px;
+}
+
+.btn_medium_icon {
+  width: 38px;
+  height: 38px;
+}
+
+.btn_large_icon {
+  width: 48px;
+  height: 48px;
+}
+
+/* ================== 크기별 아이콘 */
+.btn_small > .btn_bool {
+  width: 10px;
+  height: 10px;
+}
+
+.btn_medium > .btn_bool,
+.btn_small_icon > .btn_bool,
+.btn_medium_icon > .btn_bool {
+  width: 14px;
+  height: 14px;
+}
+
+.btn_large > .btn_bool,
+.btn_large_icon > .btn_bool {
+  width: 16px;
+  height: 16px;
+}
+
+/* ================== 스타일별 구분 */
+button.base {
+  color: var(--comp-text-wtow);
+  border: 1px solid var(--comp-base-border);
+  background-color: var(--comp-base);
+}
+
+button.base:hover {
+  background-color: var(--comp-base-hover);
+}
+
+button.base:active {
+  background-color: var(--comp-base-active);
+}
+
+button.contrast {
+  color: var(--comp-text-btow);
+  background-color: var(--comp-contrast);
+  border: 1px solid var(--comp-contrast-border);
+}
+
+button.contrast:hover {
+  background-color: var(--comp-contrast-hover);
+}
+
+button.contrast:active {
+  background-color: var(--comp-contrast-active);
+}
+
+button.primary {
+  color: var(--comp-text-wtow);
+  background-color: var(--comp-primary);
+  border: 1px solid var(--comp-primary-border);
+}
+
+button.primary:hover {
+  background-color: var(--comp-primary-hover);
+}
+
+button.primary:active {
+  background-color: var(--comp-primary-active);
+}
+
+button.ghost {
+  color: var(--comp-text-wtow);
+  border: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0);
+}
+
+button.ghost:hover {
+  background-color: var(--comp-base-hover);
+}
+
+button.ghost:active {
+  background-color: var(--comp-base-active);
+}
+
+button.ghost-con {
+  color: var(--comp-text-btow);
+  border: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0);
+}
+
+button.ghost-con:hover {
+  background-color: var(--comp-contrast-hover);
+}
+
+button.ghost-con:active {
+  background-color: var(--comp-contrast-active);
+}
+
+.morning::before {
+  font-family: "Material Symbols Rounded";
+  content: "\e518";
+  width: 16px;
+  height: 16px;
+  color: red;
+}

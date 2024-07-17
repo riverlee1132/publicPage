@@ -28,11 +28,13 @@ a,
 span,
 p {
   font-weight: normal;
+  line-height: 150%;
 }
 
 h2 {
   margin-bottom: 16px;
   font-weight: bold;
+  font-size: 1.5rem;
 }
 
 h3 {

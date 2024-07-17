@@ -1,75 +1,17 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-    <title>아이콘</title>
-    <link rel="stylesheet" href="../_common/reset.css" />
+    <title>B프레임워크 아이콘 목록</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="token.css" />
   </head>
-  <style>
-    /* 가이드 내용의 정렬을 위한 CSS */
-  body {
-  background-color: #eee;
-  color: var(--comp-text-btow);
-  }
-
-  .wrap{padding: 2rem;}
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  a,
-  span,
-  p {
-  font-weight: normal;
-  }
-  h2 {
-  margin-bottom: 16px;
-  font-weight: bold;
-  }
-
-  h3 {
-  margin-top: 50px;
-  }
-
-  .handoff {
-  margin-top: 50px;
-  padding-bottom: 50px;
-  border-bottom: 1px solid #bbb;
-  }
-
-  .handoff:first-child {
-  margin-top: 0;
-  }
-
-  .page-test-icon ul{display: flex; justify-content: flex-start; flex-wrap: wrap;}
-  .page-test-icon ul li{display: flex; flex-direction: column; align-items: center; gap: 4px; width: 180px; height: 100px;}
-  .page-test-icon ul li~li{margin-top: 1rem;}
-
-  .howto{
-    line-height: 180%;
-  }
-
-  .baseG,
-  .contrastG,
-  .primaryG,
-  .ghostG,
-  .useCase {
-  display: flex;
-  justify-content: flex-start;
-  gap: 24px;
-  align-items: end;
-  margin-top: 10px;
-  }
-  </style>
   <body bw-theme="light">
     <div class="wrap">
-      <div class="handoff">
+      <div class="update">
         <p>업데이트 2024-07-17</p>
-        <br>
+      </div>
+      <div class="handoff intro">
         <h2>아이콘 라이선스 정보</h2>
         <p>아파치 라이선스 v2.0</p>
         <p>
@@ -80,22 +22,18 @@
           consider consulting a lawyer and see the full license for all details.
         </p>
       </div>
-      <div class="handoff">
-        <p class="howto">
-          <strong>아이콘 적용 방법 </strong><br />
-          *자체 호스팅 방식<br>
-          <br>
-          구조:아이콘-이름-코드 포인트 <br>
-          1.피그마 파일에서 디자인에 적용되어 있는 아이콘의 이름을 확인한다 <br>
-          2.해당 아이콘의 코드 포인트가 무엇인지 아래 목록에서 확인한다 <br>
-          3.코드 포인트 앞에 '&#x', 끝에는 ';'를 붙여서 아이콘을 삽입한다. <br>
-        </p>
-      </div>
-      <div class="test">
-        <h2>가상 선택자 테스트</h2>
-        <span class="morning">굿모닝</span>
-      </div>
 
+      <div class="handoff">
+          <h2>아이콘 적용 방법</h2>
+          <p>자체 호스팅 방식</p>
+          <p>목록 구조: 아이콘-이름-코드 포인트</p>
+          <p class="howto">
+          1. 피그마 파일에서 디자인에 적용되어 있는 아이콘의 이름을 확인한다 <br>
+          2. 해당 아이콘의 코드 포인트가 무엇인지 아래 목록에서 확인한다 <br>
+          3. 코드 포인트 앞에 '&#x', 끝에는 ';'를 붙여서 아이콘을 삽입한다. <br>
+          *아이콘을 가상 선택자로 넣으려면 CSS에서 content: "\코드포인트"를 입력하면 됩니다. <br>
+          </p>
+      </div>
       <div class="handoff page-test-icon">
         <h2>BF 공통 영역 아이콘</h2>
         <ul>

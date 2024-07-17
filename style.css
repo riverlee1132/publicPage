@@ -6,6 +6,89 @@
   src: url("./assets/Material_Symbols_Rounded/icon_font.ttf");
 }
 
+
+/* 페이지 레이아웃  */
+/* 가이드 내용의 정렬을 위한 CSS */
+body {
+  background-color: #eee;
+  color: var(--comp-text-btow);
+}
+
+.wrap {
+  padding: 2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+span,
+p {
+  font-weight: normal;
+}
+
+h2 {
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+
+h3 {
+  margin-top: 50px;
+}
+
+.update {
+  border-bottom: 1px solid #bbb;
+}
+
+.handoff {
+  margin-top: 50px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #bbb;
+}
+
+.handoff:first-child {
+  margin-top: 0;
+}
+
+.page-test-icon ul {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.page-test-icon ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  width: 180px;
+  height: 100px;
+}
+
+.page-test-icon ul li~li {
+  margin-top: 1rem;
+}
+
+.howto {
+  line-height: 180%;
+}
+
+.baseG,
+.contrastG,
+.primaryG,
+.ghostG,
+.useCase {
+  display: flex;
+  justify-content: flex-start;
+  gap: 24px;
+  align-items: end;
+  margin-top: 10px;
+}
+
+/* ================== */
 .icon-test {
   font-family: "Material Symbols Rounded";
   font-weight: normal;
@@ -27,36 +110,47 @@
   color: inherit;
   font-variation-settings: "FILL" 1, "wght" 600, "GRAD" 0, "opsz" 24;
 }
+
 .icon-test.md-10 {
   font-size: 10px;
 }
+
 .icon-test.md-12 {
   font-size: 12px;
 }
+
 .icon-test.md-14 {
   font-size: 14px;
 }
+
 .icon-test.md-16 {
   font-size: 16px;
 }
+
 .icon-test.md-18 {
   font-size: 18px;
 }
+
 .icon-test.md-20 {
   font-size: 20px;
 }
+
 .icon-test.md-22 {
   font-size: 22px;
 }
+
 .icon-test.md-24 {
   font-size: 24px;
 }
+
 .icon-test.md-32 {
   font-size: 32px;
 }
+
 .icon-test.md-48 {
   font-size: 48px;
 }
+
 .icon-test.md-64 {
   font-size: 64px;
 }
@@ -125,20 +219,20 @@ button[class*="btn_"] {
 }
 
 /* ================== 크기별 아이콘 */
-.btn_small > .btn_bool {
+.btn_small>.btn_bool {
   width: 10px;
   height: 10px;
 }
 
-.btn_medium > .btn_bool,
-.btn_small_icon > .btn_bool,
-.btn_medium_icon > .btn_bool {
+.btn_medium>.btn_bool,
+.btn_small_icon>.btn_bool,
+.btn_medium_icon>.btn_bool {
   width: 14px;
   height: 14px;
 }
 
-.btn_large > .btn_bool,
-.btn_large_icon > .btn_bool {
+.btn_large>.btn_bool,
+.btn_large_icon>.btn_bool {
   width: 16px;
   height: 16px;
 }
@@ -212,12 +306,4 @@ button.ghost-con:hover {
 
 button.ghost-con:active {
   background-color: var(--comp-contrast-active);
-}
-
-.morning::before {
-  font-family: "Material Symbols Rounded";
-  content: "\e518";
-  width: 16px;
-  height: 16px;
-  color: red;
 }

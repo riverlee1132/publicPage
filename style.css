@@ -15,7 +15,7 @@ body {
 }
 
 .wrap {
-  padding: 2rem;
+  padding: 0 2rem;
 }
 
 h1,
@@ -39,31 +39,47 @@ h2 {
 }
 
 h3 {
-  margin-top: 50px;
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 2rem;
 }
 
-.column2 {
+ol {
+  border-bottom: 1px solid #bbb;
+  padding: 2rem 0;
+}
+
+ol>li {
+  margin-top: 1rem;
+}
+
+.column3 {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: top;
-  gap: 3rem;
   border-bottom: 1px solid #bbb;
   padding: 3rem 0;
+  gap: 5rem;
 }
 
-.column2>div {
-  width: 50%;
+.column3>div {
+  width: 40%;
+}
+
+.notice {
+  line-height: 150%;
 }
 
 .link {
-  border: 1px solid #012F6B;
+  /* border: 1px solid #012F6B; */
   border-radius: 200px;
-  padding: 4px 16px;
+  padding: 4px 0px;
   color: #012F6B;
 }
 
 .update {
-  border-bottom: 1px solid #bbb;
+  margin-top: 2rem;
+  /* border-bottom: 1px solid #bbb; */
 }
 
 .handoff {

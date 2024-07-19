@@ -10,7 +10,7 @@
 /* 페이지 레이아웃  */
 /* 가이드 내용의 정렬을 위한 CSS */
 body {
-  background-color: #eee;
+  /* background-color: #eee; */
   color: #222;
 }
 
@@ -32,9 +32,10 @@ p {
 }
 
 h2 {
-  margin-bottom: 16px;
+  margin-bottom: 3rem;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 3rem;
+  color: #012F6B;
 }
 
 h3 {

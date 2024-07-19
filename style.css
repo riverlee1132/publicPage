@@ -11,7 +11,7 @@
 /* 가이드 내용의 정렬을 위한 CSS */
 body {
   background-color: #eee;
-  color: var(--comp-text-btow);
+  color: #222;
 }
 
 .wrap {
@@ -64,15 +64,14 @@ h3 {
 .page-test-icon ul li {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 4px;
-  width: 180px;
-  height: 100px;
+  width: 250px;
+  height: 150px;
 }
 
-.page-test-icon ul li~li {
-  margin-top: 1rem;
-}
+/* .page-test-icon ul li~li {
+  margin-top: 3rem;
+} */
 
 .howto {
   line-height: 180%;
